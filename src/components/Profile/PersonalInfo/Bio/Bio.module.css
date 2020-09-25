@@ -1,0 +1,20 @@
+.bio{
+    margin-left: 20px;
+}
+.bioName{
+    color: black;
+}
+.bioList{
+    display: flex;
+}
+bioList ul:first-child{
+    color: gray;
+}
+.bioList ul:last-child{
+    color: cornflowerblue;
+    margin-left: 20px;
+}
+.bioList ul{
+    list-style: none;
+    padding: 0;
+}

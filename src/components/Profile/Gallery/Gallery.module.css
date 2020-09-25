@@ -1,0 +1,11 @@
+.gallery{
+    margin: 20px 10px;
+    display: flex;
+}
+.gallery img{
+    width:24%;
+    margin-right: 1%;
+}
+.gallery img:last-child{
+    margin-right: 0;
+}

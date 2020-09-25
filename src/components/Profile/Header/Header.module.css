@@ -1,0 +1,15 @@
+.header{
+    background-color: lightblue;
+    height: 30px;
+    line-height: 30px;
+}
+.headerStatus{
+    margin-left: 80%;
+    background-color: inherit;
+    color: gray;
+}
+.headerName{
+    background-color: inherit;
+    margin-left: 10px;
+    color: darkblue;
+}
