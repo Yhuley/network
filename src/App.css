@@ -1,14 +1,20 @@
 *{
     background-color: whitesmoke;
 }
-.app-wrapper{
+.appWrapper{
     margin: 0 auto;
     width: 100%;
     display: grid;
     grid-template-areas:
     "h h"
-    "n p";
+    "n c";
     grid-template-rows: 60px 1fr;
     grid-template-columns: 2fr 7fr;
     grid-gap: 0px;
+}
+.appWrapperContent{
+    margin-right: 5%;
+    grid-area: c;
+    border-left: 2px solid lightsteelblue;
+    border-right: 2px solid lightsteelblue;
 }

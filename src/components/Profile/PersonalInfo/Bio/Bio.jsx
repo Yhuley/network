@@ -1,7 +1,7 @@
 import React from "react";
 import bio from './Bio.module.css';
 
-const Bio = () => {
+const Bio = (props) => {
     return(
         <div className={bio.bio}>
             <label className={bio.bioName}>Profile name</label>

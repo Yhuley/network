@@ -1,18 +1,27 @@
-.navigation{
+.navigation {
     grid-area: n;
+    margin-left: 25%;
+    margin-top: 0;
+    color: cornflowerblue;
+    position: fixed;
+    top: 60px;
+    left: -200px;
+}
+
+.navigation nav {
     display: flex;
     flex-direction: column;
-    margin-left: 30%;
-    margin-top: 0;
-    list-style: none;
-    color: cornflowerblue;
 }
-.navigation li{
-    height: 30px;
-    line-height: 30px;
+
+.navigation nav a {
+    display: block;
+    padding-right: 95px;
+    height: 35px;
+    line-height: 35px;
     padding-left: 5px;
 }
-.navigation li:hover{
+
+.navigation nav a:hover {
     background-color: lightsteelblue;
     color: whitesmoke;
 }

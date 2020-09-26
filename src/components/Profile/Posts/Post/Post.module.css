@@ -1,16 +1,39 @@
-.post{
+.post {
+    min-height: 100px;
     width: 90%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
     margin-left: 20px;
     margin-bottom: 20px;
 }
-.post img{
+
+.statistic, .info {
+    display: flex;
+    flex-direction: row;
+}
+
+.text {
+    margin-left: 15px;
+}
+
+.ava {
     width: 50px;
     height: 50px;
     border-radius: 50px;
 }
-.post p{
-    margin-left: 15px;
+
+.like {
+    margin-left: 50px;
+    margin-right: 300px;
+    border: none;
+    outline: none;
+    height: 25px;
+    width: 25px;
+    font-size: 20px;
+}
+
+.comments {
+    margin-left: 30px;
+    text-decoration: underline;
 }

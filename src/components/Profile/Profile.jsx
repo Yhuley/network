@@ -5,8 +5,8 @@ import PersonalInfo from "./PersonalInfo/PersonalInfo";
 import Gallery from "./Gallery/Gallery";
 import Header from './Header/Header';
 
-const Profile = () => {
-    return(
+const Profile = (props) => {
+    return (
         <div className={profile.profile}>
             <Header/>
             <PersonalInfo/>
