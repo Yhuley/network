@@ -7,7 +7,8 @@ const Posts = () => {
     return(
             <div className={posts.posts}>
                 <CreatePost/>
-                <Post/>
+                <Post text='Yurii'/>
+                <Post text='Tomas'/>
             </div>
     );
 }

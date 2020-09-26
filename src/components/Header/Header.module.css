@@ -1,20 +1,19 @@
 .header{
-    display: grid;
+    display: flex;
+    justify-content: space-between;
     grid-area: h;
     background-color: cornflowerblue;
-    grid-template-columns: 1fr 4fr;
-    grid-template-areas:"hl hlo";
+    line-height: 60px;
+    position: fixed;
+    width: 100%;
 }
 .logo{
-    grid-area: hl;
-    height: 100%;
-    margin-left: 50%;
+    height: 60px;
     background-color: inherit;
+    margin-left: 120px;
 }
 .logOut{
     background-color: inherit;
-    grid-area: hlo;
-    margin-left: 90%;
     color: aliceblue;
-    line-height: 60px;
+    margin-right: 60px;
 }

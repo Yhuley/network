@@ -1,5 +1,6 @@
 .profile{
-    padding-right: 5%;
+    margin-right: 5%;
     grid-area: p;
-    border-left : 2px solid lightsteelblue;
+    border-left: 2px solid lightsteelblue;
+    border-right: 2px solid lightsteelblue;
 }

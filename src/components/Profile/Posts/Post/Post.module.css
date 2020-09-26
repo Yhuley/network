@@ -1,13 +1,16 @@
-.myPosts{
-    height: 100px;
-    width: 100%;
+.post{
+    width: 90%;
     display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 20px;
+    margin-bottom: 20px;
 }
-.myPosts img{
+.post img{
     width: 50px;
     height: 50px;
     border-radius: 50px;
 }
-.myPosts p{
+.post p{
     margin-left: 15px;
 }
