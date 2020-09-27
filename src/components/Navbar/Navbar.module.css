@@ -13,6 +13,7 @@
 }
 
 .navigation nav a {
+    color: darkblue;
     display: block;
     padding-right: 95px;
     height: 35px;
@@ -21,8 +22,9 @@
     text-decoration: none;
 }
 
-.navigation nav a:hover {
+.navigation nav a:hover,.navigation nav a.activeLink {
     background-color: lightsteelblue;
     color: whitesmoke;
 }
+
 
