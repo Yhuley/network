@@ -1,15 +1,16 @@
 import React from "react";
 import navbar from './Navbar.module.css';
+import {NavLink} from "react-router-dom";
 
 const Navbar = (props) => {
-    return(
+    return (
         <div className={navbar.navigation}>
             <nav>
-                <a href="/profile">Profile</a>
-                <a href="/messages">Mesages</a>
-                <a href="/news">News</a>
-                <a href="/music">Music</a>
-                <a href="/settings">Settings</a>
+                <NavLink to="/profile">Profile</NavLink>
+                <NavLink to="/messages">Mesages</NavLink>
+                <NavLink to="/news">News</NavLink>
+                <NavLink to="/music">Music</NavLink>
+                <NavLink to="/settings">Settings</NavLink>
             </nav>
         </div>
     );

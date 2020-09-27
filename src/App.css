@@ -13,8 +13,7 @@
     grid-gap: 0px;
 }
 .appWrapperContent{
+    max-width: 1200px;
     margin-right: 5%;
     grid-area: c;
-    border-left: 2px solid lightsteelblue;
-    border-right: 2px solid lightsteelblue;
 }
