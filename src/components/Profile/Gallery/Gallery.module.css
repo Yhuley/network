@@ -1,6 +1,7 @@
 .gallery{
     margin: 20px 10px;
     display: flex;
+    background-color: inherit;
 }
 .gallery img{
     width:24%;

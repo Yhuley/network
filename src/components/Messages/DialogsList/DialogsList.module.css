@@ -1,0 +1,7 @@
+.dialogList {
+    background-color: inherit;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+}

@@ -7,7 +7,7 @@ const Posts = () => {
     return (
         <div className={posts.posts}>
             <CreatePost/>
-            <Post text='Yuriibghnm,kjhgfhjkjhghjkjhghjkjhgghjkl;kjhgfdfghjk' likesAmount='5098909878'
+            <Post text='Yurii' likesAmount='5098909878'
                   commentsAmount='222'/>
             <Post text='Tomas' likesAmount='0' commentsAmount='0'/>
         </div>

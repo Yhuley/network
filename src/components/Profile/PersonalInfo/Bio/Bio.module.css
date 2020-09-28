@@ -1,11 +1,14 @@
 .bio{
     margin-left: 20px;
+    background-color: inherit;
 }
 .bioName{
     color: black;
+    background-color: inherit;
 }
 .bioList{
     display: flex;
+    background-color: inherit;
 }
 bioList ul:first-child{
     color: gray;
@@ -17,4 +20,8 @@ bioList ul:first-child{
 .bioList ul{
     list-style: none;
     padding: 0;
+    background-color: inherit;
+}
+.bioList ul li {
+    background-color: inherit;
 }

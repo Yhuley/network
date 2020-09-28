@@ -1,0 +1,5 @@
+.dialog {
+    background-color: inherit;
+    display: flex;
+    flex-direction: column-reverse;
+}
