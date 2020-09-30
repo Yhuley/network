@@ -1,13 +1,7 @@
 .dialog {
     display: flex;
     padding: 10px;
-    border-right: 1px solid lightsteelblue;
-    border-bottom: 1px solid lightsteelblue;
     background-color: snow;
-}
-
-.dialog:last-child {
-    border-bottom: none;
 }
 
 .dialog img {
@@ -34,4 +28,9 @@
     background-color: inherit;
     word-wrap: break-word;
     width: 170px;
+}
+
+.activeDialog{
+    background-color: lightsteelblue;
+    color: whitesmoke;
 }

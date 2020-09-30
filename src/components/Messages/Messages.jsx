@@ -1,11 +1,11 @@
 import React from "react";
-import messages from './Messages.module.css'
+import s from './Messages.module.css'
 import DialogsList from "./DialogsList/DialogsList.jsx";
 import Dialog from "./Dialog/Dialog";
 
 const Messages = (props) => {
     return (
-        <div className={messages.messages}>
+        <div className={s.messages}>
             <DialogsList/>
             <Dialog/>
         </div>

@@ -1,11 +1,11 @@
 import React from "react";
-import bio from './Bio.module.css';
+import s from './Bio.module.css';
 
 const Bio = (props) => {
     return(
-        <div className={bio.bio}>
-            <label className={bio.bioName}>Profile name</label>
-            <div className={bio.bioList}>
+        <div className={s.bio}>
+            <label className={s.bioName}>Profile name</label>
+            <div className={s.bioList}>
                 <ul>
                     <li>Date of birth:</li>
                     <li>Hometown:</li>

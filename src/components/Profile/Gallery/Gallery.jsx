@@ -1,9 +1,9 @@
 import React from "react";
-import gallery from './Gallery.module.css';
+import s from './Gallery.module.css';
 
 const Gallery = (props) => {
     return(
-        <div className={gallery.gallery}>
+        <div className={s.gallery}>
             <img src='https://www.pandasecurity.com/mediacenter/src/uploads/2013/11/pandasecurity-facebook-photo-privacy.jpg'/>
             <img src='https://www.pandasecurity.com/mediacenter/src/uploads/2013/11/pandasecurity-facebook-photo-privacy.jpg'/>
             <img src='https://www.pandasecurity.com/mediacenter/src/uploads/2013/11/pandasecurity-facebook-photo-privacy.jpg'/>

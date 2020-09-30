@@ -2,4 +2,6 @@
     background-color: inherit;
     display: flex;
     flex-direction: column-reverse;
+    height: 80vh;
+    border-left: 1px solid lightsteelblue;
 }
