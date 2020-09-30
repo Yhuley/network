@@ -10,14 +10,13 @@ let dialogsListData = [
     {id: 5, name: 'Roman', lastMessageText: 'Buy'},
 ]
 
+let dialogsListElements = dialogsListData
+    .map(dialog => <DialogsItem id={dialog.id} name={dialog.name} lastMessagetext={dialog.lastMessageText}/>);
+
 const DialogsList = (props) => {
     return (
         <div className={s.dialogList}>
-            <DialogsItem id={dialogsListData[0].id} name={dialogsListData[0].name} lastMessagetext={dialogsListData[0].lastMessageText}/>
-            <DialogsItem id={dialogsListData[1].id} name={dialogsListData[1].name} lastMessagetext={dialogsListData[1].lastMessageText}/>
-            <DialogsItem id={dialogsListData[2].id} name={dialogsListData[2].name} lastMessagetext={dialogsListData[2].lastMessageText}/>
-            <DialogsItem id={dialogsListData[3].id} name={dialogsListData[3].name} lastMessagetext={dialogsListData[3].lastMessageText}/>
-            <DialogsItem id={dialogsListData[4].id} name={dialogsListData[4].name} lastMessagetext={dialogsListData[4].lastMessageText}/>
+            {dialogsListElements}
         </div>
     );
 }

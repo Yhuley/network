@@ -7,11 +7,13 @@ let messageData = [
     {id: 2, messageText: 'Hello'},
 ]
 
+let dialogElemnts = messageData
+    .map( message => <Message messageText={message.messageText}/>)
+
 const Dialog = (props) => {
     return(
         <div className={s.dialog}>
-            <Message messageText={messageData[0].messageText}/>
-            <Message messageText={messageData[1].messageText}/>
+            {dialogElemnts}
         </div>
     );
 }

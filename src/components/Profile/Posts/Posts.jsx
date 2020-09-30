@@ -10,14 +10,14 @@ let postsData = [
     {id: 4, postText: 'sdfdf', likesAmount: 665, commentsAmount: 32},
 ]
 
+let postsElement = postsData
+    .map(post =>  <Post postText={post.postText} likesAmount={post.likesAmount} commentsAmount={post.commentsAmount}/>);
+
 const Posts = (props) => {
     return (
         <div className={s.posts}>
             <CreatePost/>
-            <Post postText={postsData[0].postText} likesAmount={postsData[0].likesAmount} commentsAmount={postsData[0].commentsAmount}/>
-            <Post postText={postsData[1].postText} likesAmount={postsData[1].likesAmount} commentsAmount={postsData[1].commentsAmount}/>
-            <Post postText={postsData[2].postText} likesAmount={postsData[2].likesAmount} commentsAmount={postsData[2].commentsAmount}/>
-            <Post postText={postsData[3].postText} likesAmount={postsData[3].likesAmount} commentsAmount={postsData[3].commentsAmount}/>
+            {postsElement}
         </div>
     );
 }
