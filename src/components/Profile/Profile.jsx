@@ -11,7 +11,7 @@ const Profile = (props) => {
             <Header/>
             <PersonalInfo/>
             <Gallery/>
-            <Posts/>
+            <Posts postsData={props.postsData}/>
         </div>
     );
 }
