@@ -21,7 +21,8 @@
     overflow: auto;
 }
 
-.postCreate input {
+.postCreate button {
+    outline: none;
     border: 1px solid cornflowerblue;
     width: 60px;
     height: 50px;
