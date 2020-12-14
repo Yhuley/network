@@ -1,15 +1,20 @@
 import React from "react";
 import s from './Dialog.module.css';
 import Message from "./Message/Message.jsx";
+import CreateMessage from './CreateMessage/CreateMessage.jsx';
 
 const Dialog = (props) => {
 
-    let dialogElemnts =
-        props.messageData.map( message => <Message messageText={message.messageText}/>)
+    let dialogElements =
+        props.messageData.map(message => <Message messageText={message.messageText}/>)
 
-    return(
+    return (
         <div className={s.dialog}>
-            {dialogElemnts}
+            <CreateMessage sendMessage={props.sendMessage}
+                           updateNewMessageText={props.updateNewMessageText}
+                           newMessageText={props.newMessageText}
+            />
+            {dialogElements}
         </div>
     );
 }

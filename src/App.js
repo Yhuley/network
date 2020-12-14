@@ -4,25 +4,29 @@ import Header from "./components/Header/Header.jsx";
 import Sidebar from "./components/Sidebar/Sidebar.jsx";
 import Profile from "./components/Profile/Profile.jsx";
 import Messages from "./components/Messages/Messages.jsx";
-import {BrowserRouter, Route} from "react-router-dom";
-import state from "./redux/state";
+import {Route} from "react-router-dom";
 
 const App = (props) => {
     return (
-        <BrowserRouter>
-            <div className='appWrapper'>
-                <Header/>
-                <Sidebar state={state.sidebar}/>
-                <div className='appWrapperContent'>
-                    <Route path='/profile'
-                           render={() => <Profile
-                               state={state.profile}/>}/>
-                    <Route path='/messages'
-                           render={() => <Messages
-                               state={state.messages}/>}/>
-                </div>
+        <div className='appWrapper'>
+            <Header/>
+            <Sidebar state={props.state.sidebar}/>
+            <div className='appWrapperContent'>
+                <Route path='/profile'
+                       render={() => <Profile
+                           state={props.state.profile}
+                           addPost={props.addPost}
+                           updateNewPostText={props.updateNewPostText}
+                       />}/>
+                <Route path='/messages'
+                       render={() => <Messages
+                           state={props.state.messages}
+                           sendMessage={props.sendMessage}
+                           updateNewMessageText={props.updateNewMessageText}
+                       />}/>
             </div>
-        </BrowserRouter>
+        </div>
+
     );
 }
 

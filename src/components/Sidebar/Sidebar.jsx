@@ -12,7 +12,7 @@ const Sidebar = (props) => {
         <div className={s.navigation}>
             <nav>
                 <NavLink to="/profile" activeClassName={s.activeLink}>Profile</NavLink>
-                <NavLink to="/messages" activeClassName={s.activeLink}>Mesages</NavLink>
+                <NavLink to="/messages" activeClassName={s.activeLink}>Messages</NavLink>
                 <NavLink to="/news" activeClassName={s.activeLink}>News</NavLink>
                 <NavLink to="/music" activeClassName={s.activeLink}>Music</NavLink>
                 <NavLink to="/settings" activeClassName={s.activeLink}>Settings</NavLink>

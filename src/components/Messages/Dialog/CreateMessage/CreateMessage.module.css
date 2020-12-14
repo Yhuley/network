@@ -1,0 +1,34 @@
+.messageCreate {
+    text-align: center;
+    background-color: inherit;
+    margin-left: 15px;
+}
+
+.messageCreate img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.messageCreate textarea {
+    height: 50px;
+    width: 400px;
+    border: 1px solid cornflowerblue;
+    outline: none;
+    background-color: white;
+    resize: none;
+    overflow: auto;
+}
+
+.messageCreate button {
+    outline: none;
+    border: 1px solid cornflowerblue;
+    width: 60px;
+    height: 55px;
+    position: absolute;
+    text-align: center;
+    margin-left: 10px;
+    background-color: inherit;
+    color: cornflowerblue;
+}
