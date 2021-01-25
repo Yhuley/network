@@ -15,14 +15,12 @@ const App = (props) => {
                 <Route path='/profile'
                        render={() => <Profile
                            state={props.state.profile}
-                           addPost={props.addPost}
-                           updateNewPostText={props.updateNewPostText}
+                           dispatch={props.dispatch}
                        />}/>
                 <Route path='/messages'
                        render={() => <Messages
                            state={props.state.messages}
-                           sendMessage={props.sendMessage}
-                           updateNewMessageText={props.updateNewMessageText}
+                           dispatch={props.dispatch}
                        />}/>
             </div>
         </div>

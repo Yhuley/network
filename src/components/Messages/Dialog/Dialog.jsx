@@ -10,8 +10,7 @@ const Dialog = (props) => {
 
     return (
         <div className={s.dialog}>
-            <CreateMessage sendMessage={props.sendMessage}
-                           updateNewMessageText={props.updateNewMessageText}
+            <CreateMessage dispatch={props.dispatch}
                            newMessageText={props.newMessageText}
             />
             {dialogElements}
