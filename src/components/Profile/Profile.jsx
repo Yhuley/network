@@ -11,9 +11,7 @@ const Profile = (props) => {
             <Header/>
             <PersonalInfo/>
             <Gallery/>
-            <Posts postsData={props.state.postsData}
-                   newPostText={props.state.newPostText}
-                   dispatch={props.dispatch}/>
+            <Posts store={props.store}/>
         </div>
     );
 }

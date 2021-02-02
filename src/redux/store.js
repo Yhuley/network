@@ -48,8 +48,8 @@ const store = {
     },
 
     dispatch(action) {
-        profileReducer(this._state.profile, action)
-        messagesReducer(this._state.messages, action)
+        this._state.profile = profileReducer(this._state.profile, action)
+        this._state.messages = messagesReducer(this._state.messages, action)
 
         this._callSubscriber(this._state)
     }

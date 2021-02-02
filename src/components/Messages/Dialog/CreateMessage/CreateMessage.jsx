@@ -1,17 +1,16 @@
 import React from 'react';
 import s from './CreateMessage.module.css';
-import {sendMessageActionCreator, updateNewMessageTextActionCreator} from "../../../../redux/messages-reducer";
 
 const CreateMessage = (props) => {
     const NewMessageText = React.createRef()
 
     const sendMessage = () => {
-        props.dispatch(sendMessageActionCreator())
+        props.sendMeassage()
     }
 
     const updateNewMessageText = () => {
         const text = NewMessageText.current.value
-        props.dispatch(updateNewMessageTextActionCreator(text))
+        props.updateNewMessageText(text)
     }
 
     return(

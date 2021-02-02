@@ -10,18 +10,12 @@ const App = (props) => {
     return (
         <div className='appWrapper'>
             <Header/>
-            <Sidebar state={props.state.sidebar}/>
+            <Sidebar state={props.store.getState().sidebar}/>
             <div className='appWrapperContent'>
                 <Route path='/profile'
-                       render={() => <Profile
-                           state={props.state.profile}
-                           dispatch={props.dispatch}
-                       />}/>
+                       render={() => <Profile store={props.store}/>}/>
                 <Route path='/messages'
-                       render={() => <Messages
-                           state={props.state.messages}
-                           dispatch={props.dispatch}
-                       />}/>
+                       render={() => <Messages store={props.store}/>}/>
             </div>
         </div>
 
